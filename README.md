@@ -5,6 +5,8 @@ A command-line interface for [Polar](https://polar.sh) — manage products, cust
 [![PyPI version](https://img.shields.io/pypi/v/polar-cli.svg)](https://pypi.org/project/polar-cli/)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
+![Polar CLI](assets/screenshot.png)
+
 ## Installation
 
 ### Homebrew (macOS/Linux)
