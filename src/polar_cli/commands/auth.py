@@ -1,6 +1,7 @@
 """Auth commands: login, logout, status."""
 
 
+import webbrowser
 from typing import Annotated
 
 import typer
@@ -29,12 +30,13 @@ def login(
 
     if token is None:
         settings_url = (
-            "https://sandbox.polar.sh/settings"
+            "https://sandbox.polar.sh/dashboard"
             if cli_ctx.sandbox
-            else "https://polar.sh/settings"
+            else "https://polar.sh/dashboard"
         )
-        console.print(f"Create a token at [bold link={settings_url}]{settings_url}[/bold link]")
-        token = typer.prompt("Paste your access token")
+        console.print(f"Opening [bold]{settings_url}[/bold] to create an access token...")
+        webbrowser.open(settings_url)
+        token = typer.prompt("\nPaste your access token")
 
     # Validate the token by making a test call
     client = _make_client(cli_ctx.environment, cli_ctx.base_url, token)
