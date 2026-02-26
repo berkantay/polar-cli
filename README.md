@@ -2,13 +2,25 @@
 
 A command-line interface for [Polar](https://polar.sh) — manage products, customers, subscriptions, and webhooks from your terminal.
 
+[![PyPI version](https://img.shields.io/pypi/v/polar-cli.svg)](https://pypi.org/project/polar-cli/)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+
 ## Installation
+
+### Homebrew (macOS/Linux)
+
+```bash
+brew tap berkantay/polar-cli https://github.com/berkantay/polar-cli
+brew install polar-cli
+```
+
+### pip
 
 ```bash
 pip install polar-cli
 ```
 
-Or with [uv](https://docs.astral.sh/uv/):
+### uv
 
 ```bash
 uv tool install polar-cli
@@ -120,3 +132,9 @@ uv run polar --help
 ## License
 
 Apache 2.0
+
+## Links
+
+- [Polar](https://polar.sh) - The platform
+- [Polar SDK](https://pypi.org/project/polar-sdk/) - Python SDK
+- [API Documentation](https://docs.polar.sh)
