@@ -12,7 +12,7 @@ A command-line interface for [Polar](https://polar.sh) — manage products, cust
 ### Homebrew (macOS/Linux)
 
 ```bash
-brew tap berkantay/polar-cli https://github.com/berkantay/polar-cli
+brew tap berkantay/polar-cli
 brew install polar-cli
 ```
 
